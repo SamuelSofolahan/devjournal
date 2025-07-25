@@ -1,0 +1,97 @@
+/* base.css */
+
+/* Reset & base styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: #0d6efd;
+  --clr-text: #222;
+  --clr-muted: #555;
+  --clr-bg: #f9f9f9;
+  --clr-white: #fff;
+  --clr-border: #ddd;
+
+  --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-heading: 'Inter', sans-serif;
+
+  --spacing: 1rem;
+  --radius: 0.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--clr-text);
+  background-color: var(--clr-bg);
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  margin-bottom: 0.5rem;
+  color: var(--clr-text);
+}
+
+p {
+  color: var(--clr-muted);
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--clr-primary);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btn--primary {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+}
+
+.btn--primary:hover {
+  background-color: #0b5ed7;
+}
+
+.btn--link {
+  background: none;
+  color: var(--clr-primary);
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: var(--radius);
+}

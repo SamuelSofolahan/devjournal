@@ -1,0 +1,43 @@
+/* post.css */
+
+.single-post {
+  background-color: var(--clr-white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--clr-border);
+}
+
+.single-post h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.single-post .post-meta {
+  font-size: 0.9rem;
+  color: var(--clr-muted);
+  margin-bottom: 1.5rem;
+}
+
+.single-post p {
+  margin-bottom: 1.2rem;
+}
+
+.single-post img {
+  margin: 1.5rem 0;
+  border-radius: var(--radius);
+  max-width: 100%;
+}
+
+/* Code snippets */
+.single-post pre {
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: var(--radius);
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.single-post code {
+  font-family: monospace;
+  font-size: 0.95rem;
+}

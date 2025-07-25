@@ -1,0 +1,88 @@
+/* bookmarks.css */
+
+/* .bookmark {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--clr-muted);
+  transition: color 0.2s ease;
+}
+
+.bookmark:hover {
+  color: var(--clr-primary);
+}
+
+.bookmark.active {
+  color: var(--clr-primary);
+} */
+
+/* Optional: align bookmarks to top-right inside cards */
+/* .post-card .bookmark {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+} */
+/* Bookmarks Section */
+.bookmarks {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.bookmarks h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: red;
+}
+
+.bookmarks__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bookmark-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+  padding: 1rem 1.2rem;
+  border-radius: 0.8rem;
+  margin-bottom: 1.2rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.bookmark-item:hover {
+  box-shadow: 0 0 0 2px #0077ff1c;
+}
+
+.bookmark-title {
+  font-size: 1.4rem;
+  color: #222;
+  font-weight: 500;
+  margin: 0;
+}
+
+.btn--remove {
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.btn--remove:hover {
+  color: #ff4444;
+}
+
+.bookmark-placeholder {
+  font-size: 1.3rem;
+  color: #999;
+  text-align: center;
+  padding: 1rem 0.5rem;
+}

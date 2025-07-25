@@ -1,0 +1,137 @@
+/* components.css */
+
+/* Post card */
+.post-card {
+  background-color: var(--clr-white);
+  padding: 1.5rem;
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+}
+
+.post-title {
+  font-size: 1.5rem;
+  color: var(--clr-text);
+  margin-bottom: 0.5rem;
+}
+
+.post-btns {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+.post-btns .btn--bookmark,
+.post-btns .btn--delete {
+  cursor: pointer;
+}
+.btn--bookmark-fill{
+  background-color: yellow;
+}
+.post-meta {
+  font-size: 0.85rem;
+  color: var(--clr-muted);
+  margin-bottom: 1rem;
+}
+
+.post-excerpt {
+  margin-bottom: 1.2rem;
+}
+
+/* Tags (reused from layout but for posts if needed) */
+.post-tags {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.75rem;
+  background-color: var(--clr-border);
+  color: var(--clr-muted);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+}
+
+/* Button tweaks */
+.btn--primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Bookmarks Section */
+.bookmarks {
+  margin-top: 3rem;
+  padding: 0rem;
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.bookmarks h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: red;
+}
+
+.bookmarks__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bookmark-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+  padding: 1rem 1.2rem;
+  border-radius: 0.8rem;
+  margin-bottom: 1.2rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.bookmark-item:hover {
+  box-shadow: 0 0 0 2px #0077ff1c;
+}
+
+.bookmark-title {
+  font-size: 1rem;
+  color: #222;
+  font-weight: 500;
+  margin: 0;
+}
+
+.btn--remove {
+  /* background: transparent; */
+  /* border: none; */
+  /* font-size: 2.5rem; */
+  color: #999;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.btn--remove:hover {
+  color: #ff4444;
+}
+
+.bookmark-placeholder {
+  font-size: 1.3rem;
+  color: #999;
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+/* Responsive layout */
+@media (max-width: 768px) {
+  .bookmark-content {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
+}

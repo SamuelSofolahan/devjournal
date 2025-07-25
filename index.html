@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevJournal</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/post.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <h1 class="logo">DevJournal</h1>
+        <nav class="nav">
+          <button class="btn btn--primary" id="newPostScrollBtn"
+            >New Post</button
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="main container grid">
+      <!-- ✅ Sidebar -->
+      <aside class="sidebar">
+        <div class="profile-card">
+          <img src="asset/DP-Sami.jpg" alt="Your Avatar" class="profile-img" />
+          <h2 class="profile-name">Samuel Sofolahan</h2>
+          <p class="profile-bio"
+            >Frontend Dev in training. Sharing my journey.</p
+          >
+        </div>
+
+        <div class="tags">
+          <h3>Tags</h3>
+          <ul>
+            <li><a href="#!">JavaScript</a></li>
+            <li><a href="#!">React</a></li>
+            <li><a href="#!">Frontend</a></li>
+            <li><a href="#!">Projects</a></li>
+          </ul>
+        </div>
+
+        <!-- 📌 Bookmarks Section -->
+        <div class="bookmarks">
+          <h3>📌 Bookmarks</h3>
+          <ul class="bookmarks__list" id="bookmarks-list">
+            <!-- Bookmarked Post -->
+          </ul>
+        </div>
+      </aside>
+
+      <!-- ✅ Blog Posts -->
+      <section class="posts" id="post-list">
+        <!-- <h2 class="post-title">No blogpost yet</h2> -->
+        <!-- <article class="post-card" data-id="1">
+          <div class="post-header">
+            <h2 class="post-title">Getting Started with JavaScript</h2>
+            <div class="post-btns">
+              <button class="btn--icon btn--bookmark" title="Bookmark this post"
+                >🔖</button
+              >
+              <button class="btn--icon btn--delete" title="Delete post"
+                >❌</button
+              >
+            </div>
+          </div>
+
+          <p class="post-meta">By Samuel • July 2025</p>
+          <div class="postTags">
+            <ul>
+              <li>JavaScript</li>
+              <li>Dom</li>
+            </ul>
+          </div>
+          <p class="post-excerpt">
+            JavaScript is the foundation of interactivity on the web. In this
+            post, we’ll break down how to get started with it.
+          </p>
+
+          <a href="#" class="btn btn--link">Read More →</a>
+        </article> -->
+      </section>
+
+      <!-- ✅ New Post Form -->
+      <section class="post-form">
+        <h2>Write a New Post</h2>
+        <form class="form">
+          <input
+            type="text"
+            class="form__input"
+            name="post_title"
+            placeholder="Post Title"
+            id="post_title"
+            required
+          />
+
+          <textarea
+            class="form__textarea"
+            placeholder="Write your thoughts..."
+            rows="6"
+            name="post_notes"
+            id="post_notes"
+            required
+          ></textarea>
+          <input
+            type="text"
+            class="form__input"
+            id="post_tags"
+            name="post_tags"
+            placeholder="Tags (comma-separated)"
+          />
+          <input
+            type="text"
+            class="form__input"
+            name="author_name"
+            placeholder="Author"
+            id="author_name"
+            required
+          />
+          <button class="btn btn--primary" id="publishPost" type="submit"
+            >Publish</button
+          >
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 DevJournal. Built by Samuel Sofolahan.</p>
+      </div>
+    </footer>
+
+    <script src="js/controller.js" type="module"></script>
+  </body>
+</html>
